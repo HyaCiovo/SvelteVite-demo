@@ -6,9 +6,19 @@
 </script>
 
 <main class="flex justify-center flex-col items-center">
-  <a href="https://www.svelte.cn/docs" target="_blank" rel="noreferrer">
-    <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-  </a>
+  <div class="grid grid-flow-col gap-[20px] top-[20px]">
+    <a href="https://www.svelte.cn/docs" target="_blank" rel="noreferrer">
+      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
+    </a>
+    <a href="https://daisyui.com/" target="_blank" rel="noreferrer">
+      <span class="lowercase text-primary daisy">daisy</span>
+      <span class="uppercase text-base-content daisy">UI</span>
+    </a>
+    <a href="https://www.tailwindcss.cn/" target="_blank">
+      <span class="daisy text-base-content lowercase">tailwindcss</span>
+    </a>
+  </div>
+
   <div class="flex w-[100%] justify-center">
     <a href="/" use:link>Home</a> /
     <a href="/about" use:link>About</a> /
@@ -23,15 +33,10 @@
 
 <style>
   .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+    /* font-size: 28px; */
+    height: 3em;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
+  .daisy {
+    font-size: 28px;
   }
 </style>
